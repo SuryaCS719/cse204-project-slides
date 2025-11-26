@@ -130,7 +130,7 @@
                         d<sub>n</sub> = 1 &nbsp; if &nbsp; (x<sub>n</sub>)<sub>n</sub> = 0<br>
                         d<sub>n</sub> = 0 &nbsp; if &nbsp; (x<sub>n</sub>)<sub>n</sub> = 1
                     </div>
-                    <p><strong>Proof:</strong> For any n, the n-th bit of D differs from the n-th bit of x<sub>n</sub>.
+                    <p><strong>Proof:</strong> For any n, the n-th bit of D differs from the n-th bit of x<sub>n</sub>
                     </p>
                     <p class="highlight" style="display: inline-block; margin-top: 1rem;">d<sub>n</sub> ≠
                         (x<sub>n</sub>)<sub>n</sub> ⟹ D ≠ x<sub>n</sub></p>
@@ -162,8 +162,26 @@
                 </div>
             </section>
 
-            <!-- Slide 10: The Halting Grid -->
+            <!-- Slide 10: The Counting Argument -->
             <section class="slide" data-id="10">
+                <div class="content-wrapper">
+                    <h2>The Counting Argument</h2>
+                    <p>We just proved:</p>
+                    <ul
+                        style="text-align: left; display: inline-block; font-size: 1.2rem; color: var(--text-secondary);">
+                        <li>Set of Programs is <strong>Countable</strong> (Like ℕ)</li>
+                        <li>Set of Problems is <strong>Uncountable</strong> (Like ℝ)</li>
+                    </ul>
+                    <div class="code-block" style="font-size: 1.3rem; margin: 2rem 0;">
+                        |Programs| &lt; |Problems|
+                    </div>
+                    <p><strong>Conclusion:</strong> There are infinitely many problems that <em>cannot</em> be solved by
+                        any computer.</p>
+                </div>
+            </section>
+
+            <!-- Slide 11: The Halting Grid -->
+            <section class="slide" data-id="11">
                 <div class="content-wrapper">
                     <h2>The Halting Grid</h2>
                     <p>Imagine a grid where rows are Programs (M) and columns are Inputs (w).</p>
@@ -174,8 +192,8 @@
                 </div>
             </section>
 
-            <!-- Slide 11: The Nemesis Machine -->
-            <section class="slide" data-id="11">
+            <!-- Slide 12: The Nemesis Machine -->
+            <section class="slide" data-id="12">
                 <div class="content-wrapper">
                     <h2>The "Nemesis" Machine</h2>
                     <p>We build a new machine N that runs on input w<sub>i</sub>:</p>
@@ -189,8 +207,8 @@
                 </div>
             </section>
 
-            <!-- Slide 12: Formal Proof (Halting) -->
-            <section class="slide" data-id="12">
+            <!-- Slide 13: Formal Proof (Halting) -->
+            <section class="slide" data-id="13">
                 <div class="content-wrapper">
                     <h2>Formalizing the Paradox</h2>
                     <p>Assume N exists. Since we listed <em>all</em> machines, N must be some M<sub>k</sub>.</p>
@@ -207,8 +225,8 @@
                 </div>
             </section>
 
-            <!-- Slide 13: Undecidability -->
-            <section class="slide" data-id="13">
+            <!-- Slide 14: Undecidability -->
+            <section class="slide" data-id="14">
                 <div class="content-wrapper">
                     <h2>Undecidability</h2>
                     <p>Is N on our list of all machines?</p>
@@ -226,7 +244,7 @@
                 </svg>
             </button>
             <div class="slide-counter">
-                <span id="current-slide">1</span> / <span id="total-slides">14</span>
+                <span id="current-slide">1</span> / <span id="total-slides">15</span>
             </div>
             <button class="nav-btn" id="next-btn" aria-label="Next Slide">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
